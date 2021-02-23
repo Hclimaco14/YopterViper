@@ -1,0 +1,71 @@
+/* 
+  StringsVyco.strings
+  Yopter
+
+  Created by Hector Climaco on 10/02/21.
+  
+*/
+
+// MARK: Wellcome Module
+"TITLE_WELCOME" = "Soluciones pensadas para tu empresa…";
+"SUBTITLE_WELCOME" = "Somos una nueva experiencia personalizada en asistencia profesional…";
+"LOGIN" = "Iniciar sesión";
+"SINGUP" = "Registro";
+"ACCOUNT_LEFT" = "No tienes una cuenta?";
+"ACCOUNT_RIGHT" = "Crear cuenta";
+"TERMS_AND_CONDITIONS" = "Términos y condiciones";
+"NOTICE_OF_PRIVACY" = "Aviso de privacidad";
+"TERMS_CONDITIONS_TITLE" = "Terminos, condiciones y \naviso de privacidad";
+"TERMS_CONDITIONS_AND_PRIVACY" = "TÉRMINOS Y CONDICIONES.
+
+Los servicios se prestan a través de GENOMA MOBIL S.A. DE C.V., para efectos del presente documento se le denominará GENOMA, cuyo domicilio fiscal está ubicado en Calle Juan Salvador Agraz No. 97 Piso 6-A Colonia Cuajimalpa, Delegación Cuajimalpa de Morelos C.P. 05000, Ciudad de México.
+
+La utilización de la Plataforma y de nuestros servicios te atribuye la condición de COMERCIO AFILIADO e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en estos Términos y Condiciones, en el momento en que aceptes los mismos.
+
+Funcionamiento de la Plataforma Yopter
+
+El Responsable del COMERCIO AFILIADO cargará a la Plataforma Yopter ofertas, promociones y/o descuentos a nombre del COMERCIO AFILIADO y la Plataforma a través de un modelo matemático inteligente determinará según lo solicitado por el Responsable los USUARIOS más viables para enviarles la oferta, promoción y/o descuento cargado de acuerdo a sus comportamientos de consumo.";
+
+// MARK: Login Module
+
+"TITLE_LOGIN" = "Bienvenido";
+"EMAIL_LOGIN" = "Correo electrónico:";
+"PASSWORD_LOGIN" = "Contraseña:";
+"ENTER_LOGIN" = "Entrar";
+"RECOVER_PASSWORD_LOGIN" = "Recuperar contraseña";
+"CREATE_ACCOUNT" = "Crear cuenta";
+
+// MARK: Recover Password Module
+"TITLE_RECOVER_PASSWORD" = "Recuperar contraseña";
+"BODY_RECOVER_PASSWORD" = "Ingresa tu correo electrónico registrado,
+enviaremos las  instrucciones para
+recuperar  tu contraseña";
+"EMAIL_RECOVER_PASSWORD" = "Correo electrónico:";
+"SEND_RECOVER_PASSWORD" = "Enviar";
+
+// MARK: Recover Type Register Module
+"CANDIDATE_TYPE_REGISTER" = "Soy candidato";
+"CANDIDATE_DESCRIPTION_TYPE_REGISTER" = "Sé parte de nuestra bolsa de trabajo y mantente informado de nuestras novedades o vacantes.";
+
+"COLLABORATOR_TYPE_REGISTER" = "Soy colaborador";
+
+"COLLABORATOR_DESCRIPTION_TYPE_REGISTER" = "Accede al contenido exclusivo que la empresa tiene para ti.";
+
+//MARK: Register Module
+"TITLE_REGISTER" = "CREAR CUENTA";
+"NUM_EMPLOYEE_REGISTER" = "*No. empleado";
+"BIRTHDAY_REGISTER" = "Fecha nacimiento";
+"GENDER_REGISTER" = "Género";
+"EMAIL_ REGISTER" = "*Correo electrónico";
+"CONFIRM_EMAIL_REGISTER" = "*Confirmar correo ";
+"PASSWORD_REGISTER" = "*Contraseña";
+"CONFIRM_PASSWORD_REGISTER" = "*Confirmar contraseña";
+"CREATE_ACCOUNT_DESCRIPTION_REGISTER" = "Al dar clic en “Crear cuenta” estás
+aceptando los terminos, condiciones
+y aviso de privacidad.";
+"CREATE_ACCOUNT_REGISTER" = "Crear cuenta";
+"RECOVER_PASSWORD_REGISTER" = "Recuperar contraseña";
+"LOGIN_REGISTER" = "Iniciar sesión";
+
+//MARK: Offert Module
+"TITLE_OFFERTS" = "";

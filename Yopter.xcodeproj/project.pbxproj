@@ -1,0 +1,1204 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740177E625CB62A900700CA3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177E525CB62A900700CA3 /* Enums.swift */; };
+		740177F125CB630300700CA3 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177F025CB630300700CA3 /* Protocols.swift */; };
+		740177FC25CC738000700CA3 /* FilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177F625CC738000700CA3 /* FilterPresenter.swift */; };
+		740177FD25CC738000700CA3 /* FilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177F725CC738000700CA3 /* FilterRouter.swift */; };
+		740177FE25CC738000700CA3 /* FilterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177F825CC738000700CA3 /* FilterProtocols.swift */; };
+		740177FF25CC738000700CA3 /* FilterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177F925CC738000700CA3 /* FilterInteractor.swift */; };
+		7401780025CC738000700CA3 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740177FA25CC738000700CA3 /* FilterView.swift */; };
+		7401780125CC738000700CA3 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 740177FB25CC738000700CA3 /* FilterView.xib */; };
+		7401780F25CC76F200700CA3 /* OffertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401780925CC76F200700CA3 /* OffertPresenter.swift */; };
+		7401781025CC76F200700CA3 /* OffertRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401780A25CC76F200700CA3 /* OffertRouter.swift */; };
+		7401781125CC76F200700CA3 /* OffertProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401780B25CC76F200700CA3 /* OffertProtocols.swift */; };
+		7401781225CC76F200700CA3 /* OffertInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401780C25CC76F200700CA3 /* OffertInteractor.swift */; };
+		7401781325CC76F200700CA3 /* OffertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401780D25CC76F200700CA3 /* OffertView.swift */; };
+		7401781425CC76F200700CA3 /* OffertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7401780E25CC76F200700CA3 /* OffertView.xib */; };
+		7401782025CC9F8C00700CA3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781A25CC9F8C00700CA3 /* DetailPresenter.swift */; };
+		7401782125CC9F8C00700CA3 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781B25CC9F8C00700CA3 /* DetailRouter.swift */; };
+		7401782225CC9F8C00700CA3 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781C25CC9F8C00700CA3 /* DetailProtocols.swift */; };
+		7401782325CC9F8C00700CA3 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781D25CC9F8C00700CA3 /* DetailInteractor.swift */; };
+		7401782425CC9F8C00700CA3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781E25CC9F8C00700CA3 /* DetailView.swift */; };
+		7401782525CC9F8C00700CA3 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7401781F25CC9F8C00700CA3 /* DetailView.xib */; };
+		7446814025DC38BF00FF26F6 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446813F25DC38BF00FF26F6 /* TitleView.swift */; };
+		7446814825DC38D900FF26F6 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446814725DC38D900FF26F6 /* TitleView.xib */; };
+		7446819225DD6BE000FF26F6 /* NavLogoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446819125DD6BE000FF26F6 /* NavLogoView.xib */; };
+		744681B725DD6EE500FF26F6 /* NavLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744681B625DD6EE500FF26F6 /* NavLogoView.swift */; };
+		744681BC25DD916800FF26F6 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744681BB25DD916800FF26F6 /* StyleTextField.swift */; };
+		74E3943B25D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943525D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift */; };
+		74E3943C25D5F6DF00BABDA6 /* RecoverPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943625D5F6DF00BABDA6 /* RecoverPasswordRouter.swift */; };
+		74E3943D25D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943725D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift */; };
+		74E3943E25D5F6DF00BABDA6 /* RecoverPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943825D5F6DF00BABDA6 /* RecoverPasswordInteractor.swift */; };
+		74E3943F25D5F6DF00BABDA6 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943925D5F6DF00BABDA6 /* RecoverPasswordView.swift */; };
+		74E3944025D5F6DF00BABDA6 /* RecoverPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E3943A25D5F6DF00BABDA6 /* RecoverPasswordView.xib */; };
+		74E394F125D705F000BABDA6 /* TypeRegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E394EB25D705F000BABDA6 /* TypeRegisterPresenter.swift */; };
+		74E394F225D705F000BABDA6 /* TypeRegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E394EC25D705F000BABDA6 /* TypeRegisterRouter.swift */; };
+		74E394F325D705F000BABDA6 /* TypeRegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E394ED25D705F000BABDA6 /* TypeRegisterProtocols.swift */; };
+		74E394F425D705F000BABDA6 /* TypeRegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E394EE25D705F000BABDA6 /* TypeRegisterInteractor.swift */; };
+		74E394F525D705F000BABDA6 /* TypeRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E394EF25D705F000BABDA6 /* TypeRegisterView.swift */; };
+		74E394F625D705F000BABDA6 /* TypeRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E394F025D705F000BABDA6 /* TypeRegisterView.xib */; };
+		74F3623625C5251E0075EC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3623525C5251E0075EC62 /* AppDelegate.swift */; };
+		74F3623F25C5251F0075EC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F3623E25C5251F0075EC62 /* Assets.xcassets */; };
+		74F3624225C5251F0075EC62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F3624025C5251F0075EC62 /* LaunchScreen.storyboard */; };
+		74F3624D25C5251F0075EC62 /* YopterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3624C25C5251F0075EC62 /* YopterTests.swift */; };
+		74F3625825C5251F0075EC62 /* YopterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3625725C5251F0075EC62 /* YopterUITests.swift */; };
+		74F3629025C532FA0075EC62 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3628E25C532FA0075EC62 /* AppCoordinator.swift */; };
+		74F3629125C532FA0075EC62 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3628F25C532FA0075EC62 /* Coordinator.swift */; };
+		74F362A325C5343F0075EC62 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3629D25C5343F0075EC62 /* LoginPresenter.swift */; };
+		74F362A425C5343F0075EC62 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3629E25C5343F0075EC62 /* LoginRouter.swift */; };
+		74F362A525C5343F0075EC62 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3629F25C5343F0075EC62 /* LoginProtocols.swift */; };
+		74F362A625C5343F0075EC62 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362A025C5343F0075EC62 /* LoginInteractor.swift */; };
+		74F362A725C5343F0075EC62 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362A125C5343F0075EC62 /* LoginView.swift */; };
+		74F362A825C5343F0075EC62 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F362A225C5343F0075EC62 /* LoginView.xib */; };
+		74F362B925C538340075EC62 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362B325C538340075EC62 /* RegisterPresenter.swift */; };
+		74F362BA25C538340075EC62 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362B425C538340075EC62 /* RegisterRouter.swift */; };
+		74F362BB25C538340075EC62 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362B525C538340075EC62 /* RegisterProtocols.swift */; };
+		74F362BC25C538340075EC62 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362B625C538340075EC62 /* RegisterInteractor.swift */; };
+		74F362BD25C538340075EC62 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362B725C538340075EC62 /* RegisterView.swift */; };
+		74F362BE25C538340075EC62 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F362B825C538340075EC62 /* RegisterView.xib */; };
+		74F362FC25C5426B0075EC62 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362F625C5426B0075EC62 /* FavoritePresenter.swift */; };
+		74F362FD25C5426B0075EC62 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362F725C5426B0075EC62 /* FavoriteRouter.swift */; };
+		74F362FE25C5426B0075EC62 /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362F825C5426B0075EC62 /* FavoriteProtocols.swift */; };
+		74F362FF25C5426B0075EC62 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362F925C5426B0075EC62 /* FavoriteInteractor.swift */; };
+		74F3630025C5426B0075EC62 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F362FA25C5426B0075EC62 /* FavoriteView.swift */; };
+		74F3630125C5426B0075EC62 /* FavoriteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F362FB25C5426B0075EC62 /* FavoriteView.xib */; };
+		74F3633625C5476F0075EC62 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3633025C5476F0075EC62 /* MenuPresenter.swift */; };
+		74F3633725C5476F0075EC62 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3633125C5476F0075EC62 /* MenuRouter.swift */; };
+		74F3633825C5476F0075EC62 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3633225C5476F0075EC62 /* MenuProtocols.swift */; };
+		74F3633925C5476F0075EC62 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3633325C5476F0075EC62 /* MenuInteractor.swift */; };
+		74F3633A25C5476F0075EC62 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3633425C5476F0075EC62 /* MenuView.swift */; };
+		74F3633B25C5476F0075EC62 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F3633525C5476F0075EC62 /* MenuView.xib */; };
+		74F3634525C547850075EC62 /* TutorialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3633F25C547850075EC62 /* TutorialPresenter.swift */; };
+		74F3634625C547850075EC62 /* TutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3634025C547850075EC62 /* TutorialRouter.swift */; };
+		74F3634725C547850075EC62 /* TutorialProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3634125C547850075EC62 /* TutorialProtocols.swift */; };
+		74F3634825C547850075EC62 /* TutorialInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3634225C547850075EC62 /* TutorialInteractor.swift */; };
+		74F3634925C547850075EC62 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3634325C547850075EC62 /* TutorialView.swift */; };
+		74F3634A25C547850075EC62 /* TutorialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F3634425C547850075EC62 /* TutorialView.xib */; };
+		74F3635425C547980075EC62 /* MapsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3634E25C547980075EC62 /* MapsPresenter.swift */; };
+		74F3635525C547980075EC62 /* MapsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3634F25C547980075EC62 /* MapsRouter.swift */; };
+		74F3635625C547980075EC62 /* MapsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3635025C547980075EC62 /* MapsProtocols.swift */; };
+		74F3635725C547980075EC62 /* MapsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3635125C547980075EC62 /* MapsInteractor.swift */; };
+		74F3635825C547980075EC62 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3635225C547980075EC62 /* MapsView.swift */; };
+		74F3635925C547980075EC62 /* MapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F3635325C547980075EC62 /* MapsView.xib */; };
+		74FDB35325D1B5D900969514 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB34D25D1B5D900969514 /* WelcomePresenter.swift */; };
+		74FDB35425D1B5D900969514 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB34E25D1B5D900969514 /* WelcomeRouter.swift */; };
+		74FDB35525D1B5D900969514 /* WelcomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB34F25D1B5D900969514 /* WelcomeProtocols.swift */; };
+		74FDB35625D1B5D900969514 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB35025D1B5D900969514 /* WelcomeInteractor.swift */; };
+		74FDB35725D1B5D900969514 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB35125D1B5D900969514 /* WelcomeView.swift */; };
+		74FDB35825D1B5D900969514 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB35225D1B5D900969514 /* WelcomeView.xib */; };
+		74FDB39E25D2FB3700969514 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB39D25D2FB3700969514 /* Extensions.swift */; };
+		74FDB3A925D30B0800969514 /* TermsAndConditionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3A325D30B0800969514 /* TermsAndConditionsPresenter.swift */; };
+		74FDB3AA25D30B0800969514 /* TermsAndConditionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3A425D30B0800969514 /* TermsAndConditionsRouter.swift */; };
+		74FDB3AB25D30B0800969514 /* TermsAndConditionsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3A525D30B0800969514 /* TermsAndConditionsProtocols.swift */; };
+		74FDB3AC25D30B0800969514 /* TermsAndConditionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3A625D30B0800969514 /* TermsAndConditionsInteractor.swift */; };
+		74FDB3AD25D30B0800969514 /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3A725D30B0800969514 /* TermsAndConditionsView.swift */; };
+		74FDB3AE25D30B0800969514 /* TermsAndConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB3A825D30B0800969514 /* TermsAndConditionsView.xib */; };
+		74FDB3F625D39FFE00969514 /* ColorsVyco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3F525D39FFE00969514 /* ColorsVyco.swift */; };
+		74FDB3FB25D3A04900969514 /* StyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3FA25D3A04900969514 /* StyleView.swift */; };
+		74FDB40025D3A4BC00969514 /* StyleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB3FF25D3A4BC00969514 /* StyleLabel.swift */; };
+		74FDB40625D3AA7D00969514 /* StyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB40525D3AA7D00969514 /* StyleButton.swift */; };
+		74FDB42225D439BB00969514 /* StringsVyco.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB42125D439BB00969514 /* StringsVyco.strings */; };
+		74FDB42D25D4410700969514 /* WebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB42725D4410700969514 /* WebViewPresenter.swift */; };
+		74FDB42E25D4410700969514 /* WebViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB42825D4410700969514 /* WebViewRouter.swift */; };
+		74FDB42F25D4410700969514 /* WebViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB42925D4410700969514 /* WebViewProtocols.swift */; };
+		74FDB43025D4410700969514 /* WebViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB42A25D4410700969514 /* WebViewInteractor.swift */; };
+		74FDB43125D4410700969514 /* WebViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB42B25D4410700969514 /* WebViewView.swift */; };
+		74FDB43225D4410700969514 /* WebViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB42C25D4410700969514 /* WebViewView.xib */; };
+		74FDB43C25D45CD700969514 /* YopterBaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB43B25D45CD700969514 /* YopterBaseVc.swift */; };
+		74FDB47825D4628200969514 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB47025D460DE00969514 /* Roboto-Black.ttf */; };
+		74FDB47925D4628200969514 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB47225D460DE00969514 /* Roboto-Bold.ttf */; };
+		74FDB47A25D4628200969514 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB47125D460DE00969514 /* Roboto-Medium.ttf */; };
+		74FDB47B25D4628200969514 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB47425D460DE00969514 /* Roboto-Regular.ttf */; };
+		74FDB47C25D4628200969514 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FDB47325D460DE00969514 /* Roboto-Thin.ttf */; };
+		74FDB48125D467EF00969514 /* FontsVyco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDB48025D467EF00969514 /* FontsVyco.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74F3624925C5251F0075EC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F3622A25C5251E0075EC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74F3623125C5251E0075EC62;
+			remoteInfo = Yopter;
+		};
+		74F3625425C5251F0075EC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F3622A25C5251E0075EC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74F3623125C5251E0075EC62;
+			remoteInfo = Yopter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		740177E525CB62A900700CA3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		740177F025CB630300700CA3 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		740177F625CC738000700CA3 /* FilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPresenter.swift; sourceTree = "<group>"; };
+		740177F725CC738000700CA3 /* FilterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRouter.swift; sourceTree = "<group>"; };
+		740177F825CC738000700CA3 /* FilterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProtocols.swift; sourceTree = "<group>"; };
+		740177F925CC738000700CA3 /* FilterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInteractor.swift; sourceTree = "<group>"; };
+		740177FA25CC738000700CA3 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		740177FB25CC738000700CA3 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		7401780925CC76F200700CA3 /* OffertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffertPresenter.swift; sourceTree = "<group>"; };
+		7401780A25CC76F200700CA3 /* OffertRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffertRouter.swift; sourceTree = "<group>"; };
+		7401780B25CC76F200700CA3 /* OffertProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffertProtocols.swift; sourceTree = "<group>"; };
+		7401780C25CC76F200700CA3 /* OffertInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffertInteractor.swift; sourceTree = "<group>"; };
+		7401780D25CC76F200700CA3 /* OffertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffertView.swift; sourceTree = "<group>"; };
+		7401780E25CC76F200700CA3 /* OffertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffertView.xib; sourceTree = "<group>"; };
+		7401781A25CC9F8C00700CA3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		7401781B25CC9F8C00700CA3 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		7401781C25CC9F8C00700CA3 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		7401781D25CC9F8C00700CA3 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		7401781E25CC9F8C00700CA3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7401781F25CC9F8C00700CA3 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		7446813F25DC38BF00FF26F6 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		7446814725DC38D900FF26F6 /* TitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
+		7446819125DD6BE000FF26F6 /* NavLogoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavLogoView.xib; sourceTree = "<group>"; };
+		744681B625DD6EE500FF26F6 /* NavLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLogoView.swift; sourceTree = "<group>"; };
+		744681BB25DD916800FF26F6 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
+		74E3943525D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordPresenter.swift; sourceTree = "<group>"; };
+		74E3943625D5F6DF00BABDA6 /* RecoverPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordRouter.swift; sourceTree = "<group>"; };
+		74E3943725D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordProtocols.swift; sourceTree = "<group>"; };
+		74E3943825D5F6DF00BABDA6 /* RecoverPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordInteractor.swift; sourceTree = "<group>"; };
+		74E3943925D5F6DF00BABDA6 /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
+		74E3943A25D5F6DF00BABDA6 /* RecoverPasswordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecoverPasswordView.xib; sourceTree = "<group>"; };
+		74E394EB25D705F000BABDA6 /* TypeRegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegisterPresenter.swift; sourceTree = "<group>"; };
+		74E394EC25D705F000BABDA6 /* TypeRegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegisterRouter.swift; sourceTree = "<group>"; };
+		74E394ED25D705F000BABDA6 /* TypeRegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegisterProtocols.swift; sourceTree = "<group>"; };
+		74E394EE25D705F000BABDA6 /* TypeRegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegisterInteractor.swift; sourceTree = "<group>"; };
+		74E394EF25D705F000BABDA6 /* TypeRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegisterView.swift; sourceTree = "<group>"; };
+		74E394F025D705F000BABDA6 /* TypeRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeRegisterView.xib; sourceTree = "<group>"; };
+		74F3623225C5251E0075EC62 /* Yopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F3623525C5251E0075EC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74F3623E25C5251F0075EC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74F3624125C5251F0075EC62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74F3624325C5251F0075EC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F3624825C5251F0075EC62 /* YopterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YopterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F3624C25C5251F0075EC62 /* YopterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YopterTests.swift; sourceTree = "<group>"; };
+		74F3624E25C5251F0075EC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F3625325C5251F0075EC62 /* YopterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YopterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F3625725C5251F0075EC62 /* YopterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YopterUITests.swift; sourceTree = "<group>"; };
+		74F3625925C5251F0075EC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F3628E25C532FA0075EC62 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		74F3628F25C532FA0075EC62 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		74F3629D25C5343F0075EC62 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		74F3629E25C5343F0075EC62 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		74F3629F25C5343F0075EC62 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		74F362A025C5343F0075EC62 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		74F362A125C5343F0075EC62 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		74F362A225C5343F0075EC62 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		74F362B325C538340075EC62 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		74F362B425C538340075EC62 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		74F362B525C538340075EC62 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		74F362B625C538340075EC62 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		74F362B725C538340075EC62 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		74F362B825C538340075EC62 /* RegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		74F362F625C5426B0075EC62 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		74F362F725C5426B0075EC62 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		74F362F825C5426B0075EC62 /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
+		74F362F925C5426B0075EC62 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		74F362FA25C5426B0075EC62 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		74F362FB25C5426B0075EC62 /* FavoriteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteView.xib; sourceTree = "<group>"; };
+		74F3633025C5476F0075EC62 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		74F3633125C5476F0075EC62 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		74F3633225C5476F0075EC62 /* MenuProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
+		74F3633325C5476F0075EC62 /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		74F3633425C5476F0075EC62 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		74F3633525C5476F0075EC62 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		74F3633F25C547850075EC62 /* TutorialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPresenter.swift; sourceTree = "<group>"; };
+		74F3634025C547850075EC62 /* TutorialRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialRouter.swift; sourceTree = "<group>"; };
+		74F3634125C547850075EC62 /* TutorialProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialProtocols.swift; sourceTree = "<group>"; };
+		74F3634225C547850075EC62 /* TutorialInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialInteractor.swift; sourceTree = "<group>"; };
+		74F3634325C547850075EC62 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		74F3634425C547850075EC62 /* TutorialView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialView.xib; sourceTree = "<group>"; };
+		74F3634E25C547980075EC62 /* MapsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsPresenter.swift; sourceTree = "<group>"; };
+		74F3634F25C547980075EC62 /* MapsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsRouter.swift; sourceTree = "<group>"; };
+		74F3635025C547980075EC62 /* MapsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsProtocols.swift; sourceTree = "<group>"; };
+		74F3635125C547980075EC62 /* MapsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsInteractor.swift; sourceTree = "<group>"; };
+		74F3635225C547980075EC62 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
+		74F3635325C547980075EC62 /* MapsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsView.xib; sourceTree = "<group>"; };
+		74FDB34D25D1B5D900969514 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		74FDB34E25D1B5D900969514 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		74FDB34F25D1B5D900969514 /* WelcomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeProtocols.swift; sourceTree = "<group>"; };
+		74FDB35025D1B5D900969514 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		74FDB35125D1B5D900969514 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		74FDB35225D1B5D900969514 /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		74FDB39D25D2FB3700969514 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		74FDB3A325D30B0800969514 /* TermsAndConditionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsPresenter.swift; sourceTree = "<group>"; };
+		74FDB3A425D30B0800969514 /* TermsAndConditionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsRouter.swift; sourceTree = "<group>"; };
+		74FDB3A525D30B0800969514 /* TermsAndConditionsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsProtocols.swift; sourceTree = "<group>"; };
+		74FDB3A625D30B0800969514 /* TermsAndConditionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsInteractor.swift; sourceTree = "<group>"; };
+		74FDB3A725D30B0800969514 /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		74FDB3A825D30B0800969514 /* TermsAndConditionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsView.xib; sourceTree = "<group>"; };
+		74FDB3F525D39FFE00969514 /* ColorsVyco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsVyco.swift; sourceTree = "<group>"; };
+		74FDB3FA25D3A04900969514 /* StyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleView.swift; sourceTree = "<group>"; };
+		74FDB3FF25D3A4BC00969514 /* StyleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleLabel.swift; sourceTree = "<group>"; };
+		74FDB40525D3AA7D00969514 /* StyleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleButton.swift; sourceTree = "<group>"; };
+		74FDB42125D439BB00969514 /* StringsVyco.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = StringsVyco.strings; sourceTree = "<group>"; };
+		74FDB42725D4410700969514 /* WebViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPresenter.swift; sourceTree = "<group>"; };
+		74FDB42825D4410700969514 /* WebViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRouter.swift; sourceTree = "<group>"; };
+		74FDB42925D4410700969514 /* WebViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProtocols.swift; sourceTree = "<group>"; };
+		74FDB42A25D4410700969514 /* WebViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewInteractor.swift; sourceTree = "<group>"; };
+		74FDB42B25D4410700969514 /* WebViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewView.swift; sourceTree = "<group>"; };
+		74FDB42C25D4410700969514 /* WebViewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewView.xib; sourceTree = "<group>"; };
+		74FDB43B25D45CD700969514 /* YopterBaseVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YopterBaseVc.swift; sourceTree = "<group>"; };
+		74FDB47025D460DE00969514 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		74FDB47125D460DE00969514 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		74FDB47225D460DE00969514 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		74FDB47325D460DE00969514 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		74FDB47425D460DE00969514 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		74FDB48025D467EF00969514 /* FontsVyco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsVyco.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74F3622F25C5251E0075EC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F3624525C5251F0075EC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F3625025C5251F0075EC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740177E425CB627500700CA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				740177E525CB62A900700CA3 /* Enums.swift */,
+				740177F025CB630300700CA3 /* Protocols.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		740177F525CC718600700CA3 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				740177F625CC738000700CA3 /* FilterPresenter.swift */,
+				740177F725CC738000700CA3 /* FilterRouter.swift */,
+				740177F825CC738000700CA3 /* FilterProtocols.swift */,
+				740177F925CC738000700CA3 /* FilterInteractor.swift */,
+				740177FA25CC738000700CA3 /* FilterView.swift */,
+				740177FB25CC738000700CA3 /* FilterView.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		7401780825CC76D800700CA3 /* Offert */ = {
+			isa = PBXGroup;
+			children = (
+				7401780925CC76F200700CA3 /* OffertPresenter.swift */,
+				7401780A25CC76F200700CA3 /* OffertRouter.swift */,
+				7401780B25CC76F200700CA3 /* OffertProtocols.swift */,
+				7401780C25CC76F200700CA3 /* OffertInteractor.swift */,
+				7401780D25CC76F200700CA3 /* OffertView.swift */,
+				7401780E25CC76F200700CA3 /* OffertView.xib */,
+			);
+			path = Offert;
+			sourceTree = "<group>";
+		};
+		7401781925CC9F7600700CA3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				7401781A25CC9F8C00700CA3 /* DetailPresenter.swift */,
+				7401781B25CC9F8C00700CA3 /* DetailRouter.swift */,
+				7401781C25CC9F8C00700CA3 /* DetailProtocols.swift */,
+				7401781D25CC9F8C00700CA3 /* DetailInteractor.swift */,
+				7401781E25CC9F8C00700CA3 /* DetailView.swift */,
+				7401781F25CC9F8C00700CA3 /* DetailView.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		7446813E25DC389800FF26F6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7446819025DD6BB800FF26F6 /* NavLogoView */,
+				7446818C25DD6BA200FF26F6 /* TitleView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7446818C25DD6BA200FF26F6 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				7446813F25DC38BF00FF26F6 /* TitleView.swift */,
+				7446814725DC38D900FF26F6 /* TitleView.xib */,
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
+		7446819025DD6BB800FF26F6 /* NavLogoView */ = {
+			isa = PBXGroup;
+			children = (
+				7446819125DD6BE000FF26F6 /* NavLogoView.xib */,
+				744681B625DD6EE500FF26F6 /* NavLogoView.swift */,
+			);
+			path = NavLogoView;
+			sourceTree = "<group>";
+		};
+		74E3943425D5F51F00BABDA6 /* RecoverPassword */ = {
+			isa = PBXGroup;
+			children = (
+				74E3943525D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift */,
+				74E3943625D5F6DF00BABDA6 /* RecoverPasswordRouter.swift */,
+				74E3943725D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift */,
+				74E3943825D5F6DF00BABDA6 /* RecoverPasswordInteractor.swift */,
+				74E3943925D5F6DF00BABDA6 /* RecoverPasswordView.swift */,
+				74E3943A25D5F6DF00BABDA6 /* RecoverPasswordView.xib */,
+			);
+			path = RecoverPassword;
+			sourceTree = "<group>";
+		};
+		74E394EA25D705D500BABDA6 /* TypeRegister */ = {
+			isa = PBXGroup;
+			children = (
+				74E394EB25D705F000BABDA6 /* TypeRegisterPresenter.swift */,
+				74E394EC25D705F000BABDA6 /* TypeRegisterRouter.swift */,
+				74E394ED25D705F000BABDA6 /* TypeRegisterProtocols.swift */,
+				74E394EE25D705F000BABDA6 /* TypeRegisterInteractor.swift */,
+				74E394EF25D705F000BABDA6 /* TypeRegisterView.swift */,
+				74E394F025D705F000BABDA6 /* TypeRegisterView.xib */,
+			);
+			path = TypeRegister;
+			sourceTree = "<group>";
+		};
+		74F3622925C5251E0075EC62 = {
+			isa = PBXGroup;
+			children = (
+				74F3623425C5251E0075EC62 /* Yopter */,
+				74F3624B25C5251F0075EC62 /* YopterTests */,
+				74F3625625C5251F0075EC62 /* YopterUITests */,
+				74F3623325C5251E0075EC62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74F3623325C5251E0075EC62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74F3623225C5251E0075EC62 /* Yopter.app */,
+				74F3624825C5251F0075EC62 /* YopterTests.xctest */,
+				74F3625325C5251F0075EC62 /* YopterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74F3623425C5251E0075EC62 /* Yopter */ = {
+			isa = PBXGroup;
+			children = (
+				740177E425CB627500700CA3 /* Models */,
+				74F362C825C538BC0075EC62 /* Resources */,
+				74F3628D25C531E10075EC62 /* Modules */,
+				74F3628C25C531CD0075EC62 /* Utilis */,
+				74F3628B25C531BD0075EC62 /* Coordinators */,
+				74F3623525C5251E0075EC62 /* AppDelegate.swift */,
+				74F3624325C5251F0075EC62 /* Info.plist */,
+			);
+			path = Yopter;
+			sourceTree = "<group>";
+		};
+		74F3624B25C5251F0075EC62 /* YopterTests */ = {
+			isa = PBXGroup;
+			children = (
+				74F3624C25C5251F0075EC62 /* YopterTests.swift */,
+				74F3624E25C5251F0075EC62 /* Info.plist */,
+			);
+			path = YopterTests;
+			sourceTree = "<group>";
+		};
+		74F3625625C5251F0075EC62 /* YopterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74F3625725C5251F0075EC62 /* YopterUITests.swift */,
+				74F3625925C5251F0075EC62 /* Info.plist */,
+			);
+			path = YopterUITests;
+			sourceTree = "<group>";
+		};
+		74F3628B25C531BD0075EC62 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				74F3628E25C532FA0075EC62 /* AppCoordinator.swift */,
+				74F3628F25C532FA0075EC62 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		74F3628C25C531CD0075EC62 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB39D25D2FB3700969514 /* Extensions.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		74F3628D25C531E10075EC62 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				74E394EA25D705D500BABDA6 /* TypeRegister */,
+				74E3943425D5F51F00BABDA6 /* RecoverPassword */,
+				74FDB43A25D45C8D00969514 /* Base */,
+				74FDB42625D440F100969514 /* WebView */,
+				74FDB3A225D30AAC00969514 /* TermsAndConditions */,
+				74FDB34C25D1B5BD00969514 /* Welcome */,
+				7401781925CC9F7600700CA3 /* Details */,
+				7401780825CC76D800700CA3 /* Offert */,
+				740177F525CC718600700CA3 /* Filter */,
+				74F3632F25C545BA0075EC62 /* Maps */,
+				74F3632E25C544460075EC62 /* Tutorial */,
+				74F3632D25C5438A0075EC62 /* Menu */,
+				74F362F525C542540075EC62 /* Favorite */,
+				74F362B225C538180075EC62 /* Register */,
+				74F3629C25C534240075EC62 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		74F3629C25C534240075EC62 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				74F3629D25C5343F0075EC62 /* LoginPresenter.swift */,
+				74F3629E25C5343F0075EC62 /* LoginRouter.swift */,
+				74F3629F25C5343F0075EC62 /* LoginProtocols.swift */,
+				74F362A025C5343F0075EC62 /* LoginInteractor.swift */,
+				74F362A125C5343F0075EC62 /* LoginView.swift */,
+				74F362A225C5343F0075EC62 /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		74F362B225C538180075EC62 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				74F362B325C538340075EC62 /* RegisterPresenter.swift */,
+				74F362B425C538340075EC62 /* RegisterRouter.swift */,
+				74F362B525C538340075EC62 /* RegisterProtocols.swift */,
+				74F362B625C538340075EC62 /* RegisterInteractor.swift */,
+				74F362B725C538340075EC62 /* RegisterView.swift */,
+				74F362B825C538340075EC62 /* RegisterView.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		74F362C825C538BC0075EC62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7446813E25DC389800FF26F6 /* Components */,
+				74FDB44625D45F6C00969514 /* FontsFiles */,
+				74FDB40425D3AA6900969514 /* Styles */,
+				74F3624025C5251F0075EC62 /* LaunchScreen.storyboard */,
+				74F3623E25C5251F0075EC62 /* Assets.xcassets */,
+				74FDB3F525D39FFE00969514 /* ColorsVyco.swift */,
+				74FDB42125D439BB00969514 /* StringsVyco.strings */,
+				74FDB48025D467EF00969514 /* FontsVyco.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74F362F525C542540075EC62 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				74F362F625C5426B0075EC62 /* FavoritePresenter.swift */,
+				74F362F725C5426B0075EC62 /* FavoriteRouter.swift */,
+				74F362F825C5426B0075EC62 /* FavoriteProtocols.swift */,
+				74F362F925C5426B0075EC62 /* FavoriteInteractor.swift */,
+				74F362FA25C5426B0075EC62 /* FavoriteView.swift */,
+				74F362FB25C5426B0075EC62 /* FavoriteView.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		74F3632D25C5438A0075EC62 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				74F3633025C5476F0075EC62 /* MenuPresenter.swift */,
+				74F3633125C5476F0075EC62 /* MenuRouter.swift */,
+				74F3633225C5476F0075EC62 /* MenuProtocols.swift */,
+				74F3633325C5476F0075EC62 /* MenuInteractor.swift */,
+				74F3633425C5476F0075EC62 /* MenuView.swift */,
+				74F3633525C5476F0075EC62 /* MenuView.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		74F3632E25C544460075EC62 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				74F3633F25C547850075EC62 /* TutorialPresenter.swift */,
+				74F3634025C547850075EC62 /* TutorialRouter.swift */,
+				74F3634125C547850075EC62 /* TutorialProtocols.swift */,
+				74F3634225C547850075EC62 /* TutorialInteractor.swift */,
+				74F3634325C547850075EC62 /* TutorialView.swift */,
+				74F3634425C547850075EC62 /* TutorialView.xib */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		74F3632F25C545BA0075EC62 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				74F3634E25C547980075EC62 /* MapsPresenter.swift */,
+				74F3634F25C547980075EC62 /* MapsRouter.swift */,
+				74F3635025C547980075EC62 /* MapsProtocols.swift */,
+				74F3635125C547980075EC62 /* MapsInteractor.swift */,
+				74F3635225C547980075EC62 /* MapsView.swift */,
+				74F3635325C547980075EC62 /* MapsView.xib */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		74FDB34C25D1B5BD00969514 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB34D25D1B5D900969514 /* WelcomePresenter.swift */,
+				74FDB34E25D1B5D900969514 /* WelcomeRouter.swift */,
+				74FDB34F25D1B5D900969514 /* WelcomeProtocols.swift */,
+				74FDB35025D1B5D900969514 /* WelcomeInteractor.swift */,
+				74FDB35125D1B5D900969514 /* WelcomeView.swift */,
+				74FDB35225D1B5D900969514 /* WelcomeView.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		74FDB3A225D30AAC00969514 /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB3A325D30B0800969514 /* TermsAndConditionsPresenter.swift */,
+				74FDB3A425D30B0800969514 /* TermsAndConditionsRouter.swift */,
+				74FDB3A525D30B0800969514 /* TermsAndConditionsProtocols.swift */,
+				74FDB3A625D30B0800969514 /* TermsAndConditionsInteractor.swift */,
+				74FDB3A725D30B0800969514 /* TermsAndConditionsView.swift */,
+				74FDB3A825D30B0800969514 /* TermsAndConditionsView.xib */,
+			);
+			path = TermsAndConditions;
+			sourceTree = "<group>";
+		};
+		74FDB40425D3AA6900969514 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB3FA25D3A04900969514 /* StyleView.swift */,
+				74FDB3FF25D3A4BC00969514 /* StyleLabel.swift */,
+				74FDB40525D3AA7D00969514 /* StyleButton.swift */,
+				744681BB25DD916800FF26F6 /* StyleTextField.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		74FDB42625D440F100969514 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB42725D4410700969514 /* WebViewPresenter.swift */,
+				74FDB42825D4410700969514 /* WebViewRouter.swift */,
+				74FDB42925D4410700969514 /* WebViewProtocols.swift */,
+				74FDB42A25D4410700969514 /* WebViewInteractor.swift */,
+				74FDB42B25D4410700969514 /* WebViewView.swift */,
+				74FDB42C25D4410700969514 /* WebViewView.xib */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		74FDB43A25D45C8D00969514 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB43B25D45CD700969514 /* YopterBaseVc.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		74FDB44625D45F6C00969514 /* FontsFiles */ = {
+			isa = PBXGroup;
+			children = (
+				74FDB47025D460DE00969514 /* Roboto-Black.ttf */,
+				74FDB47225D460DE00969514 /* Roboto-Bold.ttf */,
+				74FDB47125D460DE00969514 /* Roboto-Medium.ttf */,
+				74FDB47425D460DE00969514 /* Roboto-Regular.ttf */,
+				74FDB47325D460DE00969514 /* Roboto-Thin.ttf */,
+			);
+			path = FontsFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74F3623125C5251E0075EC62 /* Yopter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F3625C25C5251F0075EC62 /* Build configuration list for PBXNativeTarget "Yopter" */;
+			buildPhases = (
+				74F3622E25C5251E0075EC62 /* Sources */,
+				74F3622F25C5251E0075EC62 /* Frameworks */,
+				74F3623025C5251E0075EC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yopter;
+			productName = Yopter;
+			productReference = 74F3623225C5251E0075EC62 /* Yopter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74F3624725C5251F0075EC62 /* YopterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F3625F25C5251F0075EC62 /* Build configuration list for PBXNativeTarget "YopterTests" */;
+			buildPhases = (
+				74F3624425C5251F0075EC62 /* Sources */,
+				74F3624525C5251F0075EC62 /* Frameworks */,
+				74F3624625C5251F0075EC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F3624A25C5251F0075EC62 /* PBXTargetDependency */,
+			);
+			name = YopterTests;
+			productName = YopterTests;
+			productReference = 74F3624825C5251F0075EC62 /* YopterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74F3625225C5251F0075EC62 /* YopterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F3626225C5251F0075EC62 /* Build configuration list for PBXNativeTarget "YopterUITests" */;
+			buildPhases = (
+				74F3624F25C5251F0075EC62 /* Sources */,
+				74F3625025C5251F0075EC62 /* Frameworks */,
+				74F3625125C5251F0075EC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F3625525C5251F0075EC62 /* PBXTargetDependency */,
+			);
+			name = YopterUITests;
+			productName = YopterUITests;
+			productReference = 74F3625325C5251F0075EC62 /* YopterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74F3622A25C5251E0075EC62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					74F3623125C5251E0075EC62 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					74F3624725C5251F0075EC62 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 74F3623125C5251E0075EC62;
+					};
+					74F3625225C5251F0075EC62 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 74F3623125C5251E0075EC62;
+					};
+				};
+			};
+			buildConfigurationList = 74F3622D25C5251E0075EC62 /* Build configuration list for PBXProject "Yopter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74F3622925C5251E0075EC62;
+			productRefGroup = 74F3623325C5251E0075EC62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74F3623125C5251E0075EC62 /* Yopter */,
+				74F3624725C5251F0075EC62 /* YopterTests */,
+				74F3625225C5251F0075EC62 /* YopterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74F3623025C5251E0075EC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E3944025D5F6DF00BABDA6 /* RecoverPasswordView.xib in Resources */,
+				74FDB47825D4628200969514 /* Roboto-Black.ttf in Resources */,
+				74FDB47925D4628200969514 /* Roboto-Bold.ttf in Resources */,
+				74FDB47A25D4628200969514 /* Roboto-Medium.ttf in Resources */,
+				74FDB47B25D4628200969514 /* Roboto-Regular.ttf in Resources */,
+				74FDB47C25D4628200969514 /* Roboto-Thin.ttf in Resources */,
+				7401780125CC738000700CA3 /* FilterView.xib in Resources */,
+				74F3634A25C547850075EC62 /* TutorialView.xib in Resources */,
+				74FDB3AE25D30B0800969514 /* TermsAndConditionsView.xib in Resources */,
+				7401781425CC76F200700CA3 /* OffertView.xib in Resources */,
+				74F3635925C547980075EC62 /* MapsView.xib in Resources */,
+				74F3624225C5251F0075EC62 /* LaunchScreen.storyboard in Resources */,
+				74F362BE25C538340075EC62 /* RegisterView.xib in Resources */,
+				74F3633B25C5476F0075EC62 /* MenuView.xib in Resources */,
+				74FDB35825D1B5D900969514 /* WelcomeView.xib in Resources */,
+				74E394F625D705F000BABDA6 /* TypeRegisterView.xib in Resources */,
+				74F3630125C5426B0075EC62 /* FavoriteView.xib in Resources */,
+				7446819225DD6BE000FF26F6 /* NavLogoView.xib in Resources */,
+				74F3623F25C5251F0075EC62 /* Assets.xcassets in Resources */,
+				74F362A825C5343F0075EC62 /* LoginView.xib in Resources */,
+				74FDB42225D439BB00969514 /* StringsVyco.strings in Resources */,
+				74FDB43225D4410700969514 /* WebViewView.xib in Resources */,
+				7446814825DC38D900FF26F6 /* TitleView.xib in Resources */,
+				7401782525CC9F8C00700CA3 /* DetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F3624625C5251F0075EC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F3625125C5251F0075EC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74F3622E25C5251E0075EC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74FDB3F625D39FFE00969514 /* ColorsVyco.swift in Sources */,
+				74E394F525D705F000BABDA6 /* TypeRegisterView.swift in Sources */,
+				74F3634625C547850075EC62 /* TutorialRouter.swift in Sources */,
+				7401782325CC9F8C00700CA3 /* DetailInteractor.swift in Sources */,
+				74F362BB25C538340075EC62 /* RegisterProtocols.swift in Sources */,
+				74E3943B25D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift in Sources */,
+				74F362FF25C5426B0075EC62 /* FavoriteInteractor.swift in Sources */,
+				74F3635825C547980075EC62 /* MapsView.swift in Sources */,
+				74F3629125C532FA0075EC62 /* Coordinator.swift in Sources */,
+				74FDB42F25D4410700969514 /* WebViewProtocols.swift in Sources */,
+				740177FD25CC738000700CA3 /* FilterRouter.swift in Sources */,
+				7401780025CC738000700CA3 /* FilterView.swift in Sources */,
+				74F362FC25C5426B0075EC62 /* FavoritePresenter.swift in Sources */,
+				74E3943C25D5F6DF00BABDA6 /* RecoverPasswordRouter.swift in Sources */,
+				74FDB42D25D4410700969514 /* WebViewPresenter.swift in Sources */,
+				74F3633725C5476F0075EC62 /* MenuRouter.swift in Sources */,
+				74F3633825C5476F0075EC62 /* MenuProtocols.swift in Sources */,
+				74F3633925C5476F0075EC62 /* MenuInteractor.swift in Sources */,
+				74FDB43025D4410700969514 /* WebViewInteractor.swift in Sources */,
+				740177FE25CC738000700CA3 /* FilterProtocols.swift in Sources */,
+				7401782025CC9F8C00700CA3 /* DetailPresenter.swift in Sources */,
+				74FDB43125D4410700969514 /* WebViewView.swift in Sources */,
+				7446814025DC38BF00FF26F6 /* TitleView.swift in Sources */,
+				74FDB3AB25D30B0800969514 /* TermsAndConditionsProtocols.swift in Sources */,
+				74E394F225D705F000BABDA6 /* TypeRegisterRouter.swift in Sources */,
+				74F362A525C5343F0075EC62 /* LoginProtocols.swift in Sources */,
+				74FDB48125D467EF00969514 /* FontsVyco.swift in Sources */,
+				740177FC25CC738000700CA3 /* FilterPresenter.swift in Sources */,
+				74F3634725C547850075EC62 /* TutorialProtocols.swift in Sources */,
+				74F3634525C547850075EC62 /* TutorialPresenter.swift in Sources */,
+				74FDB43C25D45CD700969514 /* YopterBaseVc.swift in Sources */,
+				7401782425CC9F8C00700CA3 /* DetailView.swift in Sources */,
+				74FDB40625D3AA7D00969514 /* StyleButton.swift in Sources */,
+				74F362FE25C5426B0075EC62 /* FavoriteProtocols.swift in Sources */,
+				74FDB3AD25D30B0800969514 /* TermsAndConditionsView.swift in Sources */,
+				74F362BD25C538340075EC62 /* RegisterView.swift in Sources */,
+				74E394F325D705F000BABDA6 /* TypeRegisterProtocols.swift in Sources */,
+				74E394F125D705F000BABDA6 /* TypeRegisterPresenter.swift in Sources */,
+				7401781125CC76F200700CA3 /* OffertProtocols.swift in Sources */,
+				74E3943D25D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift in Sources */,
+				7401781025CC76F200700CA3 /* OffertRouter.swift in Sources */,
+				74F3629025C532FA0075EC62 /* AppCoordinator.swift in Sources */,
+				74F362A725C5343F0075EC62 /* LoginView.swift in Sources */,
+				74FDB42E25D4410700969514 /* WebViewRouter.swift in Sources */,
+				74FDB40025D3A4BC00969514 /* StyleLabel.swift in Sources */,
+				74F362BA25C538340075EC62 /* RegisterRouter.swift in Sources */,
+				74F3633625C5476F0075EC62 /* MenuPresenter.swift in Sources */,
+				74FDB39E25D2FB3700969514 /* Extensions.swift in Sources */,
+				74F3633A25C5476F0075EC62 /* MenuView.swift in Sources */,
+				74FDB35525D1B5D900969514 /* WelcomeProtocols.swift in Sources */,
+				74F362A425C5343F0075EC62 /* LoginRouter.swift in Sources */,
+				7401781225CC76F200700CA3 /* OffertInteractor.swift in Sources */,
+				7401781325CC76F200700CA3 /* OffertView.swift in Sources */,
+				74FDB35425D1B5D900969514 /* WelcomeRouter.swift in Sources */,
+				74FDB3AA25D30B0800969514 /* TermsAndConditionsRouter.swift in Sources */,
+				74FDB35625D1B5D900969514 /* WelcomeInteractor.swift in Sources */,
+				74F3635425C547980075EC62 /* MapsPresenter.swift in Sources */,
+				74F362B925C538340075EC62 /* RegisterPresenter.swift in Sources */,
+				74F362A625C5343F0075EC62 /* LoginInteractor.swift in Sources */,
+				7401782125CC9F8C00700CA3 /* DetailRouter.swift in Sources */,
+				74E3943F25D5F6DF00BABDA6 /* RecoverPasswordView.swift in Sources */,
+				74F3634825C547850075EC62 /* TutorialInteractor.swift in Sources */,
+				74F3630025C5426B0075EC62 /* FavoriteView.swift in Sources */,
+				740177F125CB630300700CA3 /* Protocols.swift in Sources */,
+				74E3943E25D5F6DF00BABDA6 /* RecoverPasswordInteractor.swift in Sources */,
+				74E394F425D705F000BABDA6 /* TypeRegisterInteractor.swift in Sources */,
+				740177E625CB62A900700CA3 /* Enums.swift in Sources */,
+				74F3634925C547850075EC62 /* TutorialView.swift in Sources */,
+				74FDB35325D1B5D900969514 /* WelcomePresenter.swift in Sources */,
+				744681B725DD6EE500FF26F6 /* NavLogoView.swift in Sources */,
+				74F362BC25C538340075EC62 /* RegisterInteractor.swift in Sources */,
+				74FDB3AC25D30B0800969514 /* TermsAndConditionsInteractor.swift in Sources */,
+				744681BC25DD916800FF26F6 /* StyleTextField.swift in Sources */,
+				7401780F25CC76F200700CA3 /* OffertPresenter.swift in Sources */,
+				74F3623625C5251E0075EC62 /* AppDelegate.swift in Sources */,
+				740177FF25CC738000700CA3 /* FilterInteractor.swift in Sources */,
+				74FDB3FB25D3A04900969514 /* StyleView.swift in Sources */,
+				74F3635625C547980075EC62 /* MapsProtocols.swift in Sources */,
+				74F362A325C5343F0075EC62 /* LoginPresenter.swift in Sources */,
+				74FDB3A925D30B0800969514 /* TermsAndConditionsPresenter.swift in Sources */,
+				74FDB35725D1B5D900969514 /* WelcomeView.swift in Sources */,
+				7401782225CC9F8C00700CA3 /* DetailProtocols.swift in Sources */,
+				74F3635525C547980075EC62 /* MapsRouter.swift in Sources */,
+				74F362FD25C5426B0075EC62 /* FavoriteRouter.swift in Sources */,
+				74F3635725C547980075EC62 /* MapsInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F3624425C5251F0075EC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F3624D25C5251F0075EC62 /* YopterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F3624F25C5251F0075EC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F3625825C5251F0075EC62 /* YopterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74F3624A25C5251F0075EC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74F3623125C5251E0075EC62 /* Yopter */;
+			targetProxy = 74F3624925C5251F0075EC62 /* PBXContainerItemProxy */;
+		};
+		74F3625525C5251F0075EC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74F3623125C5251E0075EC62 /* Yopter */;
+			targetProxy = 74F3625425C5251F0075EC62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74F3624025C5251F0075EC62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74F3624125C5251F0075EC62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74F3625A25C5251F0075EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74F3625B25C5251F0075EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74F3625D25C5251F0075EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = Yopter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yopter.Yopter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74F3625E25C5251F0075EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = Yopter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yopter.Yopter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74F3626025C5251F0075EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = YopterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yopter.YopterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yopter.app/Yopter";
+			};
+			name = Debug;
+		};
+		74F3626125C5251F0075EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = YopterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yopter.YopterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yopter.app/Yopter";
+			};
+			name = Release;
+		};
+		74F3626325C5251F0075EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = YopterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yopter.YopterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yopter;
+			};
+			name = Debug;
+		};
+		74F3626425C5251F0075EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = YopterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yopter.YopterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yopter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74F3622D25C5251E0075EC62 /* Build configuration list for PBXProject "Yopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F3625A25C5251F0075EC62 /* Debug */,
+				74F3625B25C5251F0075EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F3625C25C5251F0075EC62 /* Build configuration list for PBXNativeTarget "Yopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F3625D25C5251F0075EC62 /* Debug */,
+				74F3625E25C5251F0075EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F3625F25C5251F0075EC62 /* Build configuration list for PBXNativeTarget "YopterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F3626025C5251F0075EC62 /* Debug */,
+				74F3626125C5251F0075EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F3626225C5251F0075EC62 /* Build configuration list for PBXNativeTarget "YopterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F3626325C5251F0075EC62 /* Debug */,
+				74F3626425C5251F0075EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74F3622A25C5251E0075EC62 /* Project object */;
+}
