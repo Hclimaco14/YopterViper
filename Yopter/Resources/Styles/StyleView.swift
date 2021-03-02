@@ -38,6 +38,13 @@ internal struct StyleView {
     }
   }
   
+  static var borderError:StyleView {
+    return StyleView { view in
+      view.layer.borderColor = UIColor.red.cgColor
+      view.layer.borderWidth = 2
+    }
+  }
+  
   static func color(_ color: UIColor) -> StyleView {
     return StyleView { view in
       view.backgroundColor = color

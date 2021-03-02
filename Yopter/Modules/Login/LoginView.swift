@@ -29,7 +29,7 @@ class LoginView: YopterBaseVc {
   
   // MARK: Properties
   var presenter: LoginPresenterProtocol?
-  
+  private let validation = TextInvoker()
   // MARK: Lifecycle
   
   override func viewDidLoad() {
@@ -48,6 +48,8 @@ class LoginView: YopterBaseVc {
     
     //Email textField
     emailTxtF.apply(styles: .vycoTextFieldAlpha)
+    emailTxtF.apply(styles: .keyBoardEmail)
+    emailTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     //Password label
     passwordLbl.text = "PASSWORD_LOGIN".localized()
@@ -55,6 +57,8 @@ class LoginView: YopterBaseVc {
     
     //Password textfield
     passwordTxtF.apply(styles: .vycoTextFieldAlpha)
+    passwordTxtF.apply(styles: .password)
+    passwordTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     //Enter button
     enterBtn.setTitle("ENTER_LOGIN".localized(), for: .normal)
@@ -70,14 +74,48 @@ class LoginView: YopterBaseVc {
     createAccountLbl.apply(styles: .underlineWhite)
     createAccountLbl.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.createAccountAction)))
     
-    
   }
   
+  func validationFields() -> String? {
+    var passValidation:String?
+    
+    let completionValidation:((Bool,String?,Any?) ->()) = { (resultEval,reason,control) in
+      if resultEval == false {
+        passValidation = reason
+        if let controlText = control as? UITextField {
+          controlText.apply(styles: .borderError)
+        }
+      }
+    }
+    
+    validation.addValidation(command: EmailValidation(text: emailTxtF.text, control: emailTxtF, completionValidation))
+    
+    validation.addValidation(command: EmptyValidation(text: emailTxtF.text, control: emailTxtF, completionValidation))
+    validation.addValidation(command: EmptyValidation(text: passwordTxtF.text, control: passwordTxtF, completionValidation))
+    
+    validation.executeValidation()
+    
+    return passValidation
+  }
   
   @IBAction func enterAction(_ sender: Any) {
-    presenter?.goToHome()
+    if let error = validationFields() {
+      
+      let alert = UIAlertController(title: "ALERT_ERROR".localized(), message: error, preferredStyle: .alert)
+      let action = UIAlertAction(title: "ALERT_ACEPT".localized(), style: .destructive, handler: nil)
+      
+      alert.addAction(action)
+      self.present(alert, animated: true, completion: nil)
+      
+    } else {
+      presenter?.goToHome()
+    }
   }
   
+  
+  @objc func textfieldChange(_ textField:UITextField) {
+    textField.apply(styles: .vycoTextFieldBorder)
+  }
   
   @objc func createAccountAction() {
     presenter?.goToRegister()
@@ -87,11 +125,8 @@ class LoginView: YopterBaseVc {
     presenter?.goToRecoverPassword()
   }
   
-  
 
 }
-
-
 
 
 extension LoginView: LoginViewProtocol {

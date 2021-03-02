@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,11 +27,17 @@
 		7401782325CC9F8C00700CA3 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781D25CC9F8C00700CA3 /* DetailInteractor.swift */; };
 		7401782425CC9F8C00700CA3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401781E25CC9F8C00700CA3 /* DetailView.swift */; };
 		7401782525CC9F8C00700CA3 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7401781F25CC9F8C00700CA3 /* DetailView.xib */; };
+		7407E85A25EC6A5F00BBF15A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7407E85925EC6A5F00BBF15A /* IQKeyboardManagerSwift */; };
 		7446814025DC38BF00FF26F6 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446813F25DC38BF00FF26F6 /* TitleView.swift */; };
 		7446814825DC38D900FF26F6 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446814725DC38D900FF26F6 /* TitleView.xib */; };
 		7446819225DD6BE000FF26F6 /* NavLogoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446819125DD6BE000FF26F6 /* NavLogoView.xib */; };
 		744681B725DD6EE500FF26F6 /* NavLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744681B625DD6EE500FF26F6 /* NavLogoView.swift */; };
 		744681BC25DD916800FF26F6 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744681BB25DD916800FF26F6 /* StyleTextField.swift */; };
+		74BE4AB725ED4BAF001C8880 /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BE4AB225ED4BAF001C8880 /* EmailValidation.swift */; };
+		74BE4AB825ED4BAF001C8880 /* NumberPhoneValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BE4AB325ED4BAF001C8880 /* NumberPhoneValidation.swift */; };
+		74BE4AB925ED4BAF001C8880 /* EmptyValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BE4AB425ED4BAF001C8880 /* EmptyValidation.swift */; };
+		74BE4ABA25ED4BAF001C8880 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BE4AB525ED4BAF001C8880 /* Command.swift */; };
+		74BE4ABB25ED4BAF001C8880 /* TextInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BE4AB625ED4BAF001C8880 /* TextInvoker.swift */; };
 		74E3943B25D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943525D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift */; };
 		74E3943C25D5F6DF00BABDA6 /* RecoverPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943625D5F6DF00BABDA6 /* RecoverPasswordRouter.swift */; };
 		74E3943D25D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3943725D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift */; };
@@ -163,6 +169,11 @@
 		7446819125DD6BE000FF26F6 /* NavLogoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavLogoView.xib; sourceTree = "<group>"; };
 		744681B625DD6EE500FF26F6 /* NavLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLogoView.swift; sourceTree = "<group>"; };
 		744681BB25DD916800FF26F6 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
+		74BE4AB225ED4BAF001C8880 /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+		74BE4AB325ED4BAF001C8880 /* NumberPhoneValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPhoneValidation.swift; sourceTree = "<group>"; };
+		74BE4AB425ED4BAF001C8880 /* EmptyValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyValidation.swift; sourceTree = "<group>"; };
+		74BE4AB525ED4BAF001C8880 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		74BE4AB625ED4BAF001C8880 /* TextInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInvoker.swift; sourceTree = "<group>"; };
 		74E3943525D5F6DF00BABDA6 /* RecoverPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordPresenter.swift; sourceTree = "<group>"; };
 		74E3943625D5F6DF00BABDA6 /* RecoverPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordRouter.swift; sourceTree = "<group>"; };
 		74E3943725D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordProtocols.swift; sourceTree = "<group>"; };
@@ -262,6 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7407E85A25EC6A5F00BBF15A /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +369,18 @@
 			path = NavLogoView;
 			sourceTree = "<group>";
 		};
+		74BE4AAE25ED4B6B001C8880 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				74BE4AB525ED4BAF001C8880 /* Command.swift */,
+				74BE4AB225ED4BAF001C8880 /* EmailValidation.swift */,
+				74BE4AB425ED4BAF001C8880 /* EmptyValidation.swift */,
+				74BE4AB325ED4BAF001C8880 /* NumberPhoneValidation.swift */,
+				74BE4AB625ED4BAF001C8880 /* TextInvoker.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 		74E3943425D5F51F00BABDA6 /* RecoverPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +471,7 @@
 		74F3628C25C531CD0075EC62 /* Utilis */ = {
 			isa = PBXGroup;
 			children = (
+				74BE4AAE25ED4B6B001C8880 /* Command */,
 				74FDB39D25D2FB3700969514 /* Extensions.swift */,
 			);
 			path = Utilis;
@@ -653,6 +678,9 @@
 			dependencies = (
 			);
 			name = Yopter;
+			packageProductDependencies = (
+				7407E85925EC6A5F00BBF15A /* IQKeyboardManagerSwift */,
+			);
 			productName = Yopter;
 			productReference = 74F3623225C5251E0075EC62 /* Yopter.app */;
 			productType = "com.apple.product-type.application";
@@ -724,6 +752,9 @@
 				Base,
 			);
 			mainGroup = 74F3622925C5251E0075EC62;
+			packageReferences = (
+				7407E85825EC6A5F00BBF15A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 74F3623325C5251E0075EC62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -798,12 +829,14 @@
 				74F3635825C547980075EC62 /* MapsView.swift in Sources */,
 				74F3629125C532FA0075EC62 /* Coordinator.swift in Sources */,
 				74FDB42F25D4410700969514 /* WebViewProtocols.swift in Sources */,
+				74BE4AB925ED4BAF001C8880 /* EmptyValidation.swift in Sources */,
 				740177FD25CC738000700CA3 /* FilterRouter.swift in Sources */,
 				7401780025CC738000700CA3 /* FilterView.swift in Sources */,
 				74F362FC25C5426B0075EC62 /* FavoritePresenter.swift in Sources */,
 				74E3943C25D5F6DF00BABDA6 /* RecoverPasswordRouter.swift in Sources */,
 				74FDB42D25D4410700969514 /* WebViewPresenter.swift in Sources */,
 				74F3633725C5476F0075EC62 /* MenuRouter.swift in Sources */,
+				74BE4ABB25ED4BAF001C8880 /* TextInvoker.swift in Sources */,
 				74F3633825C5476F0075EC62 /* MenuProtocols.swift in Sources */,
 				74F3633925C5476F0075EC62 /* MenuInteractor.swift in Sources */,
 				74FDB43025D4410700969514 /* WebViewInteractor.swift in Sources */,
@@ -829,6 +862,7 @@
 				7401781125CC76F200700CA3 /* OffertProtocols.swift in Sources */,
 				74E3943D25D5F6DF00BABDA6 /* RecoverPasswordProtocols.swift in Sources */,
 				7401781025CC76F200700CA3 /* OffertRouter.swift in Sources */,
+				74BE4ABA25ED4BAF001C8880 /* Command.swift in Sources */,
 				74F3629025C532FA0075EC62 /* AppCoordinator.swift in Sources */,
 				74F362A725C5343F0075EC62 /* LoginView.swift in Sources */,
 				74FDB42E25D4410700969514 /* WebViewRouter.swift in Sources */,
@@ -868,11 +902,13 @@
 				74F3635625C547980075EC62 /* MapsProtocols.swift in Sources */,
 				74F362A325C5343F0075EC62 /* LoginPresenter.swift in Sources */,
 				74FDB3A925D30B0800969514 /* TermsAndConditionsPresenter.swift in Sources */,
+				74BE4AB825ED4BAF001C8880 /* NumberPhoneValidation.swift in Sources */,
 				74FDB35725D1B5D900969514 /* WelcomeView.swift in Sources */,
 				7401782225CC9F8C00700CA3 /* DetailProtocols.swift in Sources */,
 				74F3635525C547980075EC62 /* MapsRouter.swift in Sources */,
 				74F362FD25C5426B0075EC62 /* FavoriteRouter.swift in Sources */,
 				74F3635725C547980075EC62 /* MapsInteractor.swift in Sources */,
+				74BE4AB725ED4BAF001C8880 /* EmailValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1199,6 +1235,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7407E85825EC6A5F00BBF15A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7407E85925EC6A5F00BBF15A /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7407E85825EC6A5F00BBF15A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74F3622A25C5251E0075EC62 /* Project object */;
 }

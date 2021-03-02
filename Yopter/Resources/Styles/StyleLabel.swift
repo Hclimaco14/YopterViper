@@ -10,6 +10,12 @@ import UIKit
 internal struct StyleLabel {
   fileprivate let applyTo: (UILabel) -> Void
   
+  static var vycoRegister: StyleLabel {
+    return StyleLabel { label in
+      label.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    }
+  }
+  
   static var underline: StyleLabel {
       return StyleLabel { label in
           let attributeString =  NSMutableAttributedString(string: label.text ?? "")

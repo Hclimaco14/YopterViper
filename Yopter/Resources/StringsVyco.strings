@@ -69,3 +69,12 @@ y aviso de privacidad.";
 
 //MARK: Offert Module
 "TITLE_OFFERTS" = "";
+
+//MARK: Validations
+"EMPTY_FIELDS" = "Existen campos vacios";
+"EMAIL_FORMAT" = "El Correo no cumple con el formato correcto";
+"NUMBER_FORMAT" = "El numero no cumple con el formato correcto";
+
+//MARK: Alert
+"ALERT_ERROR" = "Advertencia";
+"ALERT_ACEPT" = "Aceptar";

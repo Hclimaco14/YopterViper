@@ -51,7 +51,6 @@ class RegisterView: YopterBaseVc {
   // MARK: Properties
   var presenter: RegisterPresenterProtocol?
   public var typeRegister: typeRegister = .candidate
-  
   // MARK: Lifecycle
   
   override func viewDidLoad() {
@@ -62,35 +61,44 @@ class RegisterView: YopterBaseVc {
     titleView.titleLbl.text = "TITLE_REGISTER".localized()
     
     numEmployeeLbl.text = "NUM_EMPLOYEE_REGISTER".localized()
-    numEmployeeLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    numEmployeeLbl.apply(styles: .vycoRegister)
     numEmployeeTxtF.apply(styles: .vycoTextFieldBorder)
+    numEmployeeTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     birthDayLbl.text = "BIRTHDAY_REGISTER".localized()
-    birthDayLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    birthDayLbl.apply(styles: .vycoRegister)
     birthDayTxtF.apply(styles: .vycoTextFieldBorder)
+    birthDayTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     genderLbl.text = "GENDER_REGISTER".localized()
-    genderLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    genderLbl.apply(styles: .vycoRegister)
     genderTxtF.apply(styles: .vycoTextFieldBorder)
+    genderTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     emailLbl.text = "EMAIL_ REGISTER".localized()
-    emailLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    emailLbl.apply(styles: .vycoRegister)
     emailTxtF.apply(styles: .vycoTextFieldBorder)
+    emailTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     confirmEmailLbl.text = "CONFIRM_EMAIL_REGISTER".localized()
-    confirmEmailLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    confirmEmailLbl.apply(styles: .vycoRegister)
     confirmEmailTxtF.apply(styles: .vycoTextFieldBorder)
+    confirmEmailTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     passwordLbl.text = "PASSWORD_REGISTER".localized()
-    passwordLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    passwordLbl.apply(styles: .vycoRegister)
     passwordTxtF.apply(styles: .vycoTextFieldBorder)
+    passwordTxtF.apply(styles: .password)
+    passwordTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     confirmPasswordLbl.text = "CONFIRM_PASSWORD_REGISTER".localized()
-    confirmPasswordLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    confirmPasswordLbl.apply(styles: .vycoRegister)
     confirmPasswordTxtF.apply(styles: .vycoTextFieldBorder)
+    confirmPasswordTxtF.apply(styles: .password)
+    confirmPasswordTxtF.addTarget(self, action: #selector(self.textfieldChange), for: .editingChanged)
     
     createAccountDescriptionLbl.text = "CREATE_ACCOUNT_DESCRIPTION_REGISTER".localized()
-    createAccountDescriptionLbl.apply(styles: .font(.Roboto_Light15), .color(.warmGreyThree))
+    createAccountDescriptionLbl.apply(styles: .vycoRegister)
     
     createAccountBtn.setTitle("CREATE_ACCOUNT_REGISTER".localized(), for: .normal)
     createAccountBtn.apply(styles: .vycoButton)
@@ -117,6 +125,53 @@ class RegisterView: YopterBaseVc {
         break
     }
   }
+  
+  func validationFields() -> String? {
+    let validation = TextInvoker()
+    var passValidation:String?
+    
+    let completionValidation:((Bool,String?,Any?) ->()) = { (resultEval,reason,control) in
+      if resultEval == false {
+        passValidation = reason
+        if let controlText = control as? UITextField {
+          controlText.apply(styles: .borderError)
+        }
+      }
+    }
+    
+    validation.addValidation(command: EmailValidation(text: emailTxtF.text, control: emailTxtF, completionValidation))
+    validation.addValidation(command: EmailValidation(text: confirmEmailTxtF.text, control: confirmEmailTxtF, completionValidation))
+    
+    if typeRegister == .collaborator {
+      validation.addValidation(command: EmptyValidation(text: numEmployeeTxtF.text, control: numEmployeeTxtF, completionValidation))
+      validation.addValidation(command: EmptyValidation(text: birthDayTxtF.text, control: birthDayTxtF, completionValidation))
+      validation.addValidation(command: EmptyValidation(text: genderTxtF.text, control: genderTxtF, completionValidation))
+    }
+    
+    validation.addValidation(command: EmptyValidation(text: emailTxtF.text, control: emailTxtF, completionValidation))
+    validation.addValidation(command: EmptyValidation(text: confirmEmailTxtF.text, control: confirmEmailTxtF, completionValidation))
+    validation.addValidation(command: EmptyValidation(text: passwordTxtF.text, control: passwordTxtF, completionValidation))
+    validation.addValidation(command: EmptyValidation(text: confirmPasswordTxtF.text, control: confirmPasswordTxtF, completionValidation))
+    
+    validation.executeValidation()
+    
+    return passValidation
+  }
+  
+  @IBAction func createAccountAction(_ sender: Any) {
+    if let error = validationFields() {
+      let alert = UIAlertController(title: "ALERT_ERROR".localized(), message: error, preferredStyle: .alert)
+      let action = UIAlertAction(title: "ALERT_ACEPT".localized(), style: .destructive, handler: nil)
+      
+      alert.addAction(action)
+      self.present(alert, animated: true, completion: nil)
+    }
+  }
+  
+  @objc func textfieldChange(_ textField:UITextField) {
+    textField.apply(styles: .vycoTextFieldBorder)
+  }
+  
 }
 
 extension RegisterView: RegisterViewProtocol {

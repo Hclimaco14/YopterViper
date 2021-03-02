@@ -255,6 +255,9 @@
                                 <constraint firstAttribute="height" constant="45" id="wkD-h1-woc"/>
                             </constraints>
                             <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="createAccountAction:" destination="-1" eventType="touchUpInside" id="Zcp-1Q-M5z"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-pT-qQV">
                             <rect key="frame" x="0.0" y="81.5" width="350" height="22"/>

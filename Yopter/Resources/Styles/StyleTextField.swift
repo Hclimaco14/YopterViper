@@ -23,6 +23,30 @@ internal struct StyleTextField {
     }
   }
   
+  static var errorTextField: StyleTextField {
+    return StyleTextField { textField in
+      textField.apply(styles: .cornerMid,.borderError)
+    }
+  }
+  
+  
+  static var password: StyleTextField {
+    return StyleTextField { textField in
+      textField.isSecureTextEntry = true
+    }
+  }
+  
+  static var keyBoardNumber: StyleTextField {
+    return StyleTextField { textField in
+      textField.keyboardType = .numberPad
+    }
+  }
+  
+  static var keyBoardEmail: StyleTextField {
+    return StyleTextField { textField in
+      textField.keyboardType = .emailAddress
+    }
+  }
 }
 
 

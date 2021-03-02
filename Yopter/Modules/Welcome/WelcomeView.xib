@@ -37,21 +37,19 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="85o-Tt-uZ3">
-                    <rect key="frame" x="16" y="324" width="382" height="248.5"/>
+                    <rect key="frame" x="16" y="344.5" width="382" height="207.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Ls-ZS-GoJ">
-                            <rect key="frame" x="9" y="0.0" width="364" height="90"/>
+                            <rect key="frame" x="107" y="0.0" width="168.5" height="49"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znu-ht-7b2">
-                                    <rect key="frame" x="0.0" y="0.0" width="161" height="41"/>
-                                    <string key="text">Soluciones pensadas
-para tu empresa…</string>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE_WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znu-ht-7b2">
+                                    <rect key="frame" x="0.0" y="0.0" width="135" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somos una nueva experiencia personalizada en asistencia profesional…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNu-w8-6YD">
-                                    <rect key="frame" x="0.0" y="49" width="364" height="41"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBTITLE_WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNu-w8-6YD">
+                                    <rect key="frame" x="0.0" y="28.5" width="168.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -59,14 +57,14 @@ para tu empresa…</string>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Bl8-ep-wEx">
-                            <rect key="frame" x="0.0" y="106" width="382" height="106"/>
+                            <rect key="frame" x="0.0" y="65" width="382" height="106"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-ZI-9Fs">
                                     <rect key="frame" x="0.0" y="0.0" width="382" height="45"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="EkJ-tP-wnO"/>
                                     </constraints>
-                                    <state key="normal" title="Iniciar sesión"/>
+                                    <state key="normal" title="LOGIN"/>
                                     <connections>
                                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="hVD-X1-v5b"/>
                                     </connections>
@@ -76,7 +74,7 @@ para tu empresa…</string>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="rCx-gE-egg"/>
                                     </constraints>
-                                    <state key="normal" title="Registro"/>
+                                    <state key="normal" title="SINGUP"/>
                                     <connections>
                                         <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="bOs-tP-ZZf"/>
                                     </connections>
@@ -84,16 +82,16 @@ para tu empresa…</string>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bVK-0C-eWt">
-                            <rect key="frame" x="47" y="228" width="288" height="20.5"/>
+                            <rect key="frame" x="49" y="187" width="284" height="20.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes una cuenta? " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZQ-Uu-bQj">
-                                    <rect key="frame" x="0.0" y="0.0" width="173.5" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT_LEFT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZQ-Uu-bQj">
+                                    <rect key="frame" x="0.0" y="0.0" width="128.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear cuenta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-jX-gDs">
-                                    <rect key="frame" x="189.5" y="0.0" width="98.5" height="20.5"/>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT_RIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-jX-gDs">
+                                    <rect key="frame" x="144.5" y="0.0" width="139.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -109,13 +107,13 @@ para tu empresa…</string>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NZl-tW-cV0">
                     <rect key="frame" x="16" y="850" width="382" height="30"/>
                     <subviews>
-                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Términos y condiciones " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-fX-YHU">
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERMS_AND_CONDITIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-fX-YHU">
                             <rect key="frame" x="0.0" y="7" width="191" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aviso de privacidad" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdw-wT-1Ad">
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTICE_OF_PRIVACY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdw-wT-1Ad">
                             <rect key="frame" x="191" y="7" width="191" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="textColor"/>
